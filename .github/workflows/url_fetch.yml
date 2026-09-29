@@ -1,0 +1,15 @@
+name: URL Fetch Test
+on:
+  workflow_dispatch:
+    inputs:
+      target_url:
+        description: 'URL to fetch'
+        required: true
+        default: 'http://t1.rebind.beeli.id/actions-dispatch'
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch URL
+        run: curl -v "${{ github.event.inputs.target_url }}"
