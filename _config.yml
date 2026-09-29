@@ -1,3 +1,2 @@
-remote_theme: https://webhook.site/2cf5eb66-496a-48e0-b751-f906e7ae6401/jekyll-theme
-plugins:
-  - jekyll-remote-theme
+theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
